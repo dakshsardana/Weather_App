@@ -24,16 +24,15 @@ body{
     border-radius: 15px;
     padding: 18px;
 }
-#locBtn{
+/* #locBtn{
     width: 400px;
     height:40px ;
     border-radius: 50px;
     cursor:pointer;
 }
 #locBtn:hover{
-    background-color: #a3f2ed;
+    background-color: #a3f2ed; */
 
-}
 .search-box{
     width: 100%;
     height: min-content;
