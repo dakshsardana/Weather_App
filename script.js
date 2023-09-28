@@ -25,13 +25,13 @@ function updateTemperatureDisplay() { //function to toggle between units of temp
     if (isCelsius) {
         const tempC = Math.round((temperatureValue - 32) * 5/9);
         temperatureElement.textContent = `${(tempC)} °C`;
-        document.querySelector(".weather_img"); // Update description as needed
+        document.querySelector("?.weather_img"); // Update description as needed
         document.querySelector(".description"); // Update description as needed
 
     } else {
         const tempF = Math.round((temperatureValue * 9/5)) + 32;
         temperatureElement.textContent = `${tempF} °F`;
-        document.querySelector(".weather_img"); // Update description as needed
+        document.querySelector("?.weather_img"); // Update description as needed
         document.querySelector(".description"); // Update description as needed
     }
 }
