@@ -63,7 +63,7 @@ async function checkWeather(city){  // Open Weather Map API used
 
     switch(weather_data.weather[0].main){ //cases for Weather in the location
         case 'Clouds':
-            weather_img.src = "./assets/cloud.png";
+            weather_img.src = "https://cdn2.iconfinder.com/data/icons/weather-365/64/weather-sun-cloud-rain-512.png";
             break;
         case 'Clear':
             weather_img.src = "./assets/clear.png";
