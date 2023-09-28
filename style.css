@@ -17,14 +17,23 @@ body{
 }
 
 .container{
-    width: 400px;
+    width: 500px;
     height: min-content;
     animation: gradient 15s ease infinite;
     background: linear-gradient(-45deg, rgb(86, 138, 160), rgb(93, 175, 210), rgb(103, 224, 113), rgb(108, 151, 180));
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 18px;
 }
+#locBtn{
+    width: 400px;
+    height:40px ;
+    border-radius: 50px;
+    cursor:pointer;
+}
+#locBtn:hover{
+    background-color: #a3f2ed;
 
+}
 .search-box{
     width: 100%;
     height: min-content;
@@ -117,11 +126,13 @@ body{
 }
 
 .humidity{
-    margin-left: 20px;
+    margin-left: 18px;
+    padding-bottom: 30px;
 }
 
 .wind{
-    margin-right: 20px;
+    margin-right: 18px;
+    padding-bottom: 30px;
 }
 
 .weather-details i{
