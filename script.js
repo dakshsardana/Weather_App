@@ -21,7 +21,7 @@ toggleButton.addEventListener("change", function() {
 
 function updateTemperatureDisplay() { //function to toggle between units of temparature
     const temperatureValue = parseFloat(temperatureElement.textContent);
-    
+    var toggleButton=false;
     if (isCelsius) {
         const tempC = Math.round((temperatureValue - 32) * 5/9);
         temperatureElement.textContent = `${(tempC)} °C`;
@@ -63,19 +63,19 @@ async function checkWeather(city){  // Open Weather Map API used
 
     switch(weather_data.weather[0].main){ //cases for Weather in the location
         case 'Clouds':
-            weather_img.src = "/assets/cloud.png";
+            weather_img.src = "./assets/cloud.png";
             break;
         case 'Clear':
-            weather_img.src = "/assets/clear.png";
+            weather_img.src = "./assets/clear.png";
             break;
         case 'Rain':
-            weather_img.src = "/assets/rain.png";
+            weather_img.src = "./assets/rain.png";
             break;
         case 'Mist':
-            weather_img.src = "/assets/mist.png";
+            weather_img.src = "./assets/mist.png";
             break;
         case 'Snow':
-            weather_img.src = "/assets/snow.png";
+            weather_img.src = "./assets/snow.png";
             break;
     }
 
