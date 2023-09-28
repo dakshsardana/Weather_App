@@ -63,19 +63,19 @@ async function checkWeather(city){  // Open Weather Map API used
 
     switch(weather_data.weather[0].main){ //cases for Weather in the location
         case 'Clouds':
-            weather_img.src = "https://cdn2.iconfinder.com/data/icons/weather-365/64/weather-sun-cloud-rain-512.png";
+            weather_img.src = "./assets/cloud.png";
             break;
         case 'Clear':
-            weather_img.src = "https://cdn2.iconfinder.com/data/icons/weather-365/64/sun-cloudy-sky-weather-512.png";
+            weather_img.src = "./assets/clear.png";
             break;
         case 'Rain':
-            weather_img.src = "https://cdn3.iconfinder.com/data/icons/nature-emoji/50/Raining-512.png";
+            weather_img.src = "./assets/rain.png";
             break;
         case 'Mist':
-            weather_img.src = "https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_39-512.png";
+            weather_img.src = "./assets/mist.png";
             break;
         case 'Snow':
-            weather_img.src = "https://cdn2.iconfinder.com/data/icons/free-color-outline-christmas/24/christmas-snow-snowflake-weather-winter-512.png";
+            weather_img.src = "./assets/snow.png";
             break;
     }
 
